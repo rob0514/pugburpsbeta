@@ -3,7 +3,7 @@ title: The Pug Life
 date: 2023-03-23T17:15:33.212Z
 thumbnail: /media/pug-in-dog-bed.jpg
 ---
-The Pug Life: A Journey of Love, Laughter, and Unwavering Loyalty
+# The Pug Life: A Journey of Love, Laughter, and Unwavering Loyalty
 
 ### Introduction
 
