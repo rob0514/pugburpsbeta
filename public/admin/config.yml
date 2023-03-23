@@ -10,8 +10,8 @@ public_folder: "/media"
 collections:
   - label: "Posts"
     name: "posts"
-    folder: "src/pages/posts"
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    folder: "src/content/blog/posts"
+    slug: "{{slug}}"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
