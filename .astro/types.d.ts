@@ -86,12 +86,12 @@ declare module 'astro:content' {
 	>;
 
 	const entryMap: {
-		"blog": {
-"posts/2023-03-23_the-pug-life.md": {
-  id: "posts/2023-03-23_the-pug-life.md",
-  slug: "posts/2023-03-23_the-pug-life",
+		"posts": {
+"the-pug-life-2.md": {
+  id: "the-pug-life-2.md",
+  slug: "the-pug-life-2",
   body: string,
-  collection: "blog",
+  collection: "posts",
   data: any
 } & { render(): Render[".md"] },
 },
