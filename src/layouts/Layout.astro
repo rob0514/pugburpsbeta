@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css';
 import "@fontsource/plus-jakarta-sans";
 import Header from '../components/Header.astro';
 export interface Props {
@@ -14,7 +15,7 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" type="text/css" href="/src/styles/global.css" />
+		<style global></style>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>

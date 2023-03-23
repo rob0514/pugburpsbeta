@@ -4,7 +4,12 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(
+    root: './',
+    srcDir: './src',
+    publicDir: './public',
+    outDir: './dist',
+    assets: 'assets',
+    integrations: [tailwind(
       {
         config: { applyBaseStyles: false },
       }
