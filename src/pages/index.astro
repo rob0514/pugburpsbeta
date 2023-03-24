@@ -3,13 +3,18 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Featured from '../components/Featured.astro';
 import Highlight from '../components/Highlight.astro';
-import { getCollection } from 'astro:content';
-const blogEntries = await getCollection('posts');
+import { getCollection } from "astro:content";
+const blogPosts = await getCollection("posts");
 ---
 
 <Layout title="pugburps">
 <div>
 	<section class="bg-gray-100">
+		{blogPosts.map(post =>
+		<h2>
+			<a href={`/posts/${post.slug}`}>{post.data.title}</a>
+		</h2>
+		)}
 	<Featured />
 		</section>
 	<section>

@@ -1,7 +1,10 @@
 ---
+
 title: The Pug Life 2
-date: 2023-03-23T22:53:58.373Z
+date: '2023-03-23T22:53:58.373Z'
 thumbnail: /media/pug-in-dog-bed.jpg
+layout: ../../layouts/PostLayout.astro
+
 ---
 # The Pug Life: A Journey of Love, Laughter, and Unwavering Loyalty
 
