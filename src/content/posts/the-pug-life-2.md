@@ -10,7 +10,6 @@ layout: ../../layouts/PostLayout.astro
 
 ### Introduction
 
-\
 If you've ever had the pleasure of meeting a pug, you know that these small, wrinkly, and irresistibly adorable dogs have a unique charm that is hard to resist. Their quirky personalities, loyal nature, and unmatched companionship make them the perfect addition to any family. In this blog post, we'll explore the joys of owning a pug and how these precious pups can make life more fulfilling and fun.
 
 ### Their Lovable and Quirky Personality
