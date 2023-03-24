@@ -10,9 +10,6 @@ const blogEntries = await getCollection('posts');
 <Layout title="pugburps">
 <div>
 	<section class="bg-gray-100">
-		{blogEntries.map(post =>
-			<h1>{post.data.content}</h1>
-		)}
 	<Featured />
 		</section>
 	<section>
@@ -27,6 +24,5 @@ const blogEntries = await getCollection('posts');
 	<section>
 	<Highlight />
 	</section>
-
-
+</div>
 </Layout>
