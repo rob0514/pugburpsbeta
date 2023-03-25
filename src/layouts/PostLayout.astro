@@ -5,6 +5,7 @@ import Header from '../components/Header.astro';
 
 const { content } = Astro.props;
 const { title } = content;
+const { frontmatter } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -18,10 +19,37 @@ const { title } = content;
 </head>
 <body>
 <Header />
-<div>
-    <section class="post bg-gray-100 block">
-<slot />
-    </section>
+<section>
+    <div class="text-sm breadcrumbs pt-[1.5vw]">
+        <ul>
+          <li><a>Home</a></li> 
+          <li><a>Documents</a></li> 
+          <li>Add Document</li>
+        </ul>
+      </div>
+<div class="overflow-hidden relative w-full">
+    <div class="flex items-center justify-center py-[48px] mb-[2.5rem] relative before:content-[''] before:w-0 before:min-h-[300px] before:pb-[30%]">
+        <figure class="flex absolute inset-0 h-full mb-0">
+<img src={frontmatter.thumbnail} class="absolute inset-0 w-full h-full object-cover object-center" alt="..." />
+        </figure>
+        <div class="absolute inset-0 w-full h-full bg-black opacity-40"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-xl">
+                <h1 class="mb-5 text-5xl font-bold">{frontmatter.headerText}</h1>
+            </div>
+        </div>
     </div>
+</div>
+    </section>
+    <section>
+    <div class="content relative w-full grid grid-flow-auto gap-y-[3rem] gap-x-[144px] grid-cols-[minmax(0,_1fr)] lg:grid-cols-[minmax(0,_1fr)_300px]">
+        <div id="primary" class="grid">
+    <article class="post prose-h1:text-5xl prose-h1:leading-[4rem] prose prose-stone lg:prose-lg">
+<slot />
+    </article>
+</div>
+<aside id="secondary" class="grid break-words break all">222222 22222222222 222222 222222222222222 2222222</aside>
+</div>
+</section>
 </body>
 </html>
