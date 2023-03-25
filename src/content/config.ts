@@ -12,10 +12,10 @@ const blogCollection = defineCollection({
 })
 const authorCollection = defineCollection({
     schema: z.object({
-        title: z.string(),
-        date: z.string().transform((str) => new Date(str)),
+        name: z.string(),
+        email: z.string(),
         thumbnail: z.string().optional(),
-        headerText: z.string(),
+        bio: z.string(),
         layout: z.string().optional(),
     }),
 })
@@ -31,7 +31,7 @@ const productCollection = defineCollection({
 })
 
 export const collections = {
+    products: productCollection,
     posts: blogCollection,
     authors: authorCollection,
-    products: productCollection,
 }
