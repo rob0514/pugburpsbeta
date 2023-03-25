@@ -7,6 +7,7 @@ const blogCollection = defineCollection({
         thumbnail: z.string().optional(),
         headerText: z.string(),
         layout: z.string().optional(),
+        categories: z.array(z.string()),
     }),
 })
 const authorCollection = defineCollection({
@@ -25,6 +26,7 @@ const productCollection = defineCollection({
         thumbnail: z.string().optional(),
         headerText: z.string(),
         layout: z.string().optional(),
+        categories: z.array(z.string()),
     }),
 })
 
