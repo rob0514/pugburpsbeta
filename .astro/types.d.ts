@@ -92,11 +92,11 @@ declare module 'astro:content' {
   slug: "the-pug-life-2",
   body: string,
   collection: "posts",
-  data: InferEntrySchema<"posts">
+  data: any
 } & { render(): Render[".md"] },
 },
 
 	};
 
-	type ContentConfig = typeof import("../src/content/config");
+	type ContentConfig = never;
 }

@@ -7,6 +7,7 @@ const blogCollection = defineCollection({
         thumbnail: z.string().optional(),
         headerText: z.string(),
         layout: z.string().optional(),
+        category: z.list(),
     }),
 })
 
