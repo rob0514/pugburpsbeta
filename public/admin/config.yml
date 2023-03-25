@@ -31,7 +31,7 @@ collections:
       - {label: "Avatar", name: "avatar", widget: "image", required: false}
       - {label: "Bio", name: "bio", widget: "markdown"} 
 
- - label: "Products"
+  - label: "Products"
     name: "products"
     folder: "src/content/products"
     slug: "{{slug}}"
@@ -42,7 +42,7 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Header Text", name: "headerText", widget: "string", required: true}
       - {label: "Body", name: "body", widget: "markdown"}
-      
+
   - label: "Site Settings"
     name: "site"
     files:
