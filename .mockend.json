@@ -10,10 +10,7 @@
       }
     },
     "author": {
-      "loremParagraphs": {
-        "minLength": 2,
-        "maxLength": 2
-      }
+      "string": ["Rob Davis", "Lisa Jennings","Bill Parcels","Jeff Stringer"]
     },
     "body": {
       "loremParagraphs": {
