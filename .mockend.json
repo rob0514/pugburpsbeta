@@ -9,6 +9,12 @@
         "maxLength": 20
       }
     },
+    "author": {
+      "loremWords": {
+        "minLength": 2,
+        "maxLength": 2
+      }
+    },
     "body": {
       "loremParagraphs": {
         "minLength": 10,
