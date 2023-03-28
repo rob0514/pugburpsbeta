@@ -95,6 +95,15 @@ declare module 'astro:content' {
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] },
 },
+"products": {
+"test.md": {
+  id: "test.md",
+  slug: "test",
+  body: string,
+  collection: "products",
+  data: any
+} & { render(): Render[".md"] },
+},
 
 	};
 

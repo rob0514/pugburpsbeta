@@ -4,8 +4,9 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'sans': ['Tiempos','Helvetica', 'Arial', 'sans-serif'],
-				'serif': ['']
+				'sans': ['Plus Jakarta Sans','Helvetica', 'Arial', 'sans-serif'],
+				'serif': ['Tiempos','Helvetica', 'Arial', 'sans-serif'],
+				'logo': ['Poppins','Helvetica', 'Arial', 'sans-serif']
 			},
 			container: {
 				center: true,

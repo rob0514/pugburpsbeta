@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import "@fontsource/plus-jakarta-sans/variable.css";
+import "@fontsource/plus-jakarta-sans";
 import "@fontsource/inter/variable.css";
 import Header from '../components/Header.astro';
 
@@ -20,7 +20,7 @@ const { frontmatter } = Astro.props
 </head>
 <body>
 <Header />
-<section>
+<section class="pb-[1vw]">
     <div class="text-sm breadcrumbs pt-[1.5vw]">
         <ul>
           <li><a>Home</a></li> 
@@ -33,19 +33,33 @@ const { frontmatter } = Astro.props
         <figure class="flex absolute inset-0 h-full mb-0">
 <img src={frontmatter.thumbnail} class="absolute inset-0 w-full h-full object-cover object-center" alt="..." />
         </figure>
-        <div class="absolute inset-0 w-full h-full bg-black opacity-40"></div>
-        <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-xl">
-                <h1 class="mb-5 text-5xl font-bold">{frontmatter.headerText}</h1>
-            </div>
-        </div>
     </div>
 </div>
     </section>
     <section>
     <div class="content relative w-full grid grid-flow-auto gap-y-[3rem] gap-x-[144px] grid-cols-[minmax(0,_1fr)] lg:grid-cols-[minmax(0,_1fr)_300px]">
         <div id="primary" class="grid">
+
+                <h1 class="mb-[1.07em] text-5xl font-bold">{frontmatter.headerText}</h1>
+                <div class="grid grid-cols-2 mb-[1.07em]">
+                    <div class="flex w-full flex-col items-start justify-start text-xs">
+<div class="flex">Written by Rob Davis</div>
+<hr class="w-[5%] my-[1vh]">
+<div class="flex">March 26, 2023</div>
+                    </div>
+                    <div class="flex w-full items-start justify-start text-xs">
+                        <ul class="flex flex-row wrap list-none m-0 p-0 w-full">
+                            <li class="tag inline ml-2">General</li>
+                            <li class="tag inline ml-2">General</li>
+                            <li class="tag inline ml-2">General</li>
+                            <li class="tag inline ml-2">General</li>
+                            <li class="tag inline ml-2">General</li>
+                        </ul>
+                    </div>
+                </div>
+
     <article class="post prose-h1:text-5xl prose-h1:leading-[4rem] prose prose-stone lg:prose-lg">
+
 <slot />
     </article>
 </div>

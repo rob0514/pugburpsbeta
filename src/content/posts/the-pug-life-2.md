@@ -15,11 +15,17 @@ If you've ever had the pleasure of meeting a pug, you know that these small, wri
 
 ## Their Lovable and Quirky Personality
 
-Pugs are known for their quirky and lovable personalities. Their expressive faces, complete with big, round eyes and wrinkled brows, make it easy to fall in love with them. They have a penchant for silliness, whether it's tilting their heads in curiosity or snorting and snuffling in excitement. These traits make pugs not just adorable pets, but also great sources of laughter and happiness for their owners.
+Pugs are known for their quirky and lovable personalities. Their expressive faces, complete with big, round eyes and wrinkled brows, make it easy to fall in love with them. They have a penchant for silliness, whether it's tilting their heads in curiosity or snorting and snuffling in excitement. 
+
+>Pugs don't require a lot of exercise, which means you can enjoy leisurely walks and snuggly downtime with your furry friend. 
+<cite>Timeless clean perfume</cite>
+
+These traits make pugs not just adorable pets, but also great sources of laughter and happiness for their owners.
 
 ## Compact Size and Low-Maintenance Lifestyle
 
-One of the main benefits of owning a pug is their compact size. They are perfect for small homes or apartments, making them ideal pets for urban dwellers. Pugs don't require a lot of exercise, which means you can enjoy leisurely walks and snuggly downtime with your furry friend. Their short coat is also low-maintenance, requiring minimal grooming compared to other breeds. This makes pugs a great choice for busy individuals who want a loyal companion without the added stress of extensive care.
+One of the main benefits of owning a pug is their compact size. They are perfect for small homes or apartments, making them ideal pets for urban dwellers. 
+Pugs don't require a lot of exercise, which means you can enjoy leisurely walks and snuggly downtime with your furry friend. Their short coat is also low-maintenance, requiring minimal grooming compared to other breeds. This makes pugs a great choice for busy individuals who want a loyal companion without the added stress of extensive care.
 
 ## Unwavering Loyalty and Affection
 
