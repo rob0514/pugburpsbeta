@@ -10,7 +10,7 @@
       }
     },
     "author": {
-      "loremWords": {
+      "loremParagraphs": {
         "minLength": 2,
         "maxLength": 2
       }
