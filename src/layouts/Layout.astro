@@ -5,7 +5,6 @@ import Header from '../components/Header.astro';
 export interface Props {
 	title: string;
 }
-
 const { title } = Astro.props;
 ---
 
@@ -19,9 +18,12 @@ const { title } = Astro.props;
 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 		<title>{title}</title>
 	</head>
-	<body>
+	<body  x-data="{ open: false }" class="overflow-auto" :class="{'overflow-y-hidden pr-4':open,'overflow-auto pr-0':!open}">
+		<div class="masthead h-16 p-0 w-full bg-white"></div>
+		<main>
 	<Header />
 		<slot />
+	</main>
 	<script>
 		if (window.netlifyIdentity) {
 			window.netlifyIdentity.on("init", user => {

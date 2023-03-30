@@ -9,25 +9,13 @@ const blogPosts = await getCollection("posts");
 
 <Layout title="pugburps">
 <div>
-	<section class="bg-gray-100">
-		{blogPosts.map(post =>
+	<section>
+<!-- 		{blogPosts.map(post =>
 		<h2>
 			<a href={`/posts/${post.slug}`}>{post.data.title}</a>
 		</h2>
-		)}
+		)} -->
 	<Featured />
 		</section>
-	<section>
-	    <Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image="http://picsum.photos/600/400" date="May 14, 1971" author="Rob Davis"/>
-		<Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image="http://picsum.photos/600/400" date="May 14, 1971" author="Rob Davis"/>
-		<Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image="http://picsum.photos/600/400" date="May 14, 1971" author="Rob Davis"/>
-		<Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image="http://picsum.photos/600/400" date="May 14, 1971" author="Rob Davis"/>
-		<Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image="http://picsum.photos/600/400" date="May 14, 1971" author="Rob Davis"/>
-		<Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image="http://picsum.photos/600/400" date="May 14, 1971" author="Rob Davis"/>
-
-	</section>
-	<section>
-	<Highlight />
-	</section>
 </div>
 </Layout>

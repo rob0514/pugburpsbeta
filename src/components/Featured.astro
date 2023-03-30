@@ -1,11 +1,54 @@
 ---
+import Card from './Card.astro';
 import FeaturedCard from './FeaturedCard.astro';
+import pugPhotoFeatured from '/media/pug-stolen2.jpg';
+import pugPhotoCard from '/media/young-woman-playing-with-pug-by-working-table-2022-12-16-15-51-57-utc.jpg';
+import pugPhotoCard2 from '/media/pug-in-dog-bed.jpg';
+import pugPhotoCard3 from '/media/pristinepug.jpg';
 ---
+<div class="grid w-full relative grid-cols-[57.5%_37.5%] min-h-screen gap-x-[3%]">
+    <div class="w-full">
+        <div class="w-full sticky top-10">
+            <div class="w-full relative aspect-golden">
+            <img src={pugPhotoFeatured} class="object-cover object-center w-full h-full" alt="..."/>
+        </div>
+        <div class="px-0 py-6">
+            <div class="font-bold text-xl mb-2">
+                <h2 class="text-2xl inline tracking-tighter leading-tight">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, adipisci.  
+                </h2>
+                <p class="text-2xl inline tracking-tighter font-light text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis, voluptatibus quibusdam rem esse voluptate aliquid ut. Suscipit libero ratione adipisci, et, cupiditate numquam aliquid non deleniti, repellat voluptate reiciendis?</p>
+            </div>
+            <div class="meta flex items-center justify-start mt-7">
+                <div class="author flex items-center flex-wrap text-[0.765rem] font-medium"><span
+                        class="mr-1 text-xs font-light">by</span>Rob Davis</div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 h-auto gap-x-16 lg:gap-y-0 items-center justify-center">
-<FeaturedCard />
-        <div class="order-1 lg:order-2 mb-8 lg:mb-0 lg:mt-0 flex">
-            <img class="h-full w-full object-cover object-center" src="https://picsum.photos/600/400" alt="mockup" />
+                <div class="date text-[0.765rem] font-medium before:content-[''] before:w-[1rem] before:h-[1px] before:mx-[0.5rem] before:bg-gray-400 flex items-center flex-wrap">March 28, 2023</div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <div class="grid grid-cols-2 gap-x-[8%] gap-y-[3%] w-full h-full">
+        <div class="card-wrapper w-full image relative">
+            <Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image={pugPhotoCard} date="May 14, 1971" author="Rob Davis"/>
+		
+        </div>
+        <div class="card-wrapper w-full image relative">
+            <Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image={pugPhotoCard2} date="May 14, 1971" author="Rob Davis"/>
+		
+        </div>
+        <div class="card-wrapper grid col-span-2 w-full image relative">
+            <Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image={pugPhotoCard3} date="May 14, 1971" author="Rob Davis"/>
+		
+        </div>
+        <div class="card-wrapper w-full image relative">
+            <Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image={pugPhotoCard} date="May 14, 1971" author="Rob Davis"/>
+		
+        </div>
+        <div class="card-wrapper w-full image relative">
+            <Card title="A cool Rob card for his blog site" desc="Behold the marvel and wonder that is Rob's coding" image={pugPhotoCard2} date="May 14, 1971" author="Rob Davis"/>
+		
         </div>
     </div>
+</div>           
 

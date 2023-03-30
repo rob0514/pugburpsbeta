@@ -13,12 +13,14 @@ const {image, alt, href, title, desc, date, author} = Astro.props;
 ---
 
 
-    <div class="card relative block">
-        <img class="w-full" src={image} alt={alt}>
-        <div class="px-6 py-6">
+    <div class='card relative block'>
+        <div class="image-wrapper w-full relative">
+            <img src={image} class="object-cover object-top w-full h-full" alt="..."/>
+        </div>
+        <div class="px-0 py-6">
             <div class="font-bold text-xl mb-2">
                 <h2 class="text-2xl inline tracking-tighter leading-tight">{title}</h2>
-                <p class="text-2xl inline tracking-tighter font-light">{desc}</p>
+                <p class="text-2xl inline tracking-tighter font-light text-gray-500">{desc}</p>
             </div>
             <div class="meta flex items-center justify-start mt-7">
                 <div class="author flex items-center flex-wrap text-[0.765rem] font-medium"><span
@@ -26,6 +28,7 @@ const {image, alt, href, title, desc, date, author} = Astro.props;
 
                 <div class="date text-[0.765rem] font-medium before:content-[''] before:w-[1rem] before:h-[1px] before:mx-[0.5rem] before:bg-gray-400 flex items-center flex-wrap">{date}</div>
             </div>
+        </div>
         </div>
 
 
