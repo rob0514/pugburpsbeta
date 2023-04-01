@@ -1,11 +1,134 @@
 ---
 import Card from './Card.astro';
+import Article from './Article.astro';
 import FeaturedCard from './FeaturedCard.astro';
 import pugPhotoFeatured from '/media/pug-stolen2.jpg';
 import pugPhotoCard from '/media/young-woman-playing-with-pug-by-working-table-2022-12-16-15-51-57-utc.jpg';
 import pugPhotoCard2 from '/media/pug-in-dog-bed.jpg';
 import pugPhotoCard3 from '/media/pristinepug.jpg';
+
+const sml = 'basis-full sm:basis-[47%] lg:basis-[22%]';
+const med = 'basis-full lg:basis-[47%]';
+const lrg = 'basis-full';
 ---
+
+<div class="articles articles--home flex flex-wrap flex-row justify-between items-start">           
+<div class="article article--wide mb-[80px] relative grow-0 shrink basis-full lg:basis-[47%]">
+<div class="article__image-container relative m-0 w-full">    
+<div class="article__image-wrap w-full relative pb-[112.51758087201%]">
+<img 
+class="article__image block absolute inset-0 w-full h-full object-cover object-center leading-[30px] text-center text-[#e9e9e9]" 
+src={pugPhotoFeatured} 
+alt=""
+/>
+</div>
+<span class="article__image-overlay absolute inset-0 bg-black opacity-[0.0]"></span>
+<a class="article__image-link absolute inset-0" href="/news/stella-artois-reveals-new-brand-world-created-in-partnership-with-jones-knowles-ritchie/"></a>
+</div>
+<div class="article__content">
+<ul class="article__categories hidden">
+<li class="article__category"><a class="theme__link" href="/news/">News</a></li>
+<li class="article__category"><a class="theme__link" href="/graphic-design/">Graphic Design</a></li>
+</ul>
+<div class="article__info absolute top-[50px] left-[50px] right-[50px]">
+<h2 class="article__title text-white">
+<a class="article__link" href="/news/stella-artois-reveals-new-brand-world-created-in-partnership-with-jones-knowles-ritchie/">
+<span class="article__title--short text-5xl block font-bold">A New 'Brand World'</span>
+<span class="article__title--full text-2xl block">JKR reinvents Stella Artois for a new generation with fresh branding and photography</span>
+</a>
+</h2>
+<p class="article__excerpt hidden">
+<a class="article__link" href="/news/stella-artois-reveals-new-brand-world-created-in-partnership-with-jones-knowles-ritchie/">JKR reinvents Stella Artois for a new generation with fresh branding and photography.</a>
+</p>
+</div>
+<a class="article__button hidden" href="/news/stella-artois-reveals-new-brand-world-created-in-partnership-with-jones-knowles-ritchie/">Read More</a>
+<p class="article__date hidden">
+<a class="article__link hidden" href="/news/stella-artois-reveals-new-brand-world-created-in-partnership-with-jones-knowles-ritchie/">30 March 2023</a>
+</p>
+</div>
+</div>
+
+<Article
+image={pugPhotoCard2}
+alt="David Hodgson | Credit: bluemarlin"
+categories="Insight, Graphic Design"
+title="I'm still giving my clients the same advice': David Hodgson looks back on three decades of running a design agency"
+date="March 30, 2023"
+href="#"
+excerpt=""
+filter="grayscale"
+type={sml}
+aspect="aspect-square"
+/>
+
+<Article
+image={pugPhotoCard}
+alt="David Hodgson | Credit: bluemarlin"
+categories="Interviews, Illustration"
+title="Hatiye Garip on accessible illustration and how the creative industry can take action"
+date="March 30, 2023"
+href="#"
+excerpt=""
+filter=""
+type={sml}
+aspect="aspect-square"
+/>
+  
+    <Article
+    image={pugPhotoFeatured}
+    alt="Designer Suvani Dave on the joy of storytelling and how to navigate the creative jobs market"
+    categories="learn Astro, review PRs"
+    title="Designer Suvani Dave on the joy of storytelling and how to navigate the creative jobs market"
+    date="March 30, 2023"
+    href="#"
+    excerpt=""
+    filter="grayscale"
+    type={sml}
+    aspect=""
+    />
+
+    <Article
+    image={pugPhotoCard2}
+    alt="Designer Suvani Dave on the joy of storytelling and how to navigate the creative jobs market"
+    categories="learn Astro, review PRs"
+    title="Designer Suvani Dave on the joy of storytelling and how to navigate the creative jobs market"
+    date="March 30, 2023"
+    href="#"
+    excerpt=""
+    filter=""
+    type={sml}
+    aspect=""
+    />
+
+    <Article
+    image={pugPhotoCard3}
+    alt="Designer Suvani Dave on the joy of storytelling and how to navigate the creative jobs market"
+    categories="learn Astro, review PRs"
+    title="Designer Suvani Dave on the joy of storytelling and how to navigate the creative jobs market"
+    date="March 30, 2023"
+    href="#"
+    excerpt=""
+    filter=""
+    type={sml}
+    aspect=""
+    />
+
+    <Article
+    image={pugPhotoCard}
+    alt="Designer Suvani Dave on the joy of storytelling and how to navigate the creative jobs market"
+    categories="learn Astro, review PRs"
+    title="Designer Suvani Dave on the joy of storytelling and how to navigate the creative jobs market"
+    date="March 30, 2023"
+    href="#"
+    excerpt=""
+    filter=""
+    type={sml}
+    aspect=""
+    />
+
+</div>
+
+
 <div class="grid w-full relative grid-cols-[57.5%_37.5%] min-h-screen gap-x-[3%]">
     <div class="w-full">
         <div class="w-full sticky top-10">

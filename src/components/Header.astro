@@ -2,27 +2,24 @@
 
 ---
 <section class="mb-0 pb-16 bg-white">
-<div class="flex flex-row items-center justify-between w-full z-30">
-    <div class="flex-none items-center justify-start max-w-fit font-logo tracking-[-0.12rem] font-[700] text-3xl" :class="{'text-white':open,'text-[#326278]':!open}"><a href="/"><span class="text-[#d58a9f]">pug</span>burps</a></div>
-    <div class="grow w-full items-center justify-center max-w-[33vw]">
-    <form class="relative">
-        <div class="border-b border-[#aaaaaa]">
-        <input type="text" onblur="if(this.value == '') { this.value = 'search for something'; }" value="search for something" onfocus="if(this.value == 'search for something') { this.value = ''; }" value="search for something" class="bg-transparent block h-[2rem] leading-[2rem] p-0 m-0 border-0 w-full" :class="{'text-white':open,'text-black':!open}" autocomplete="off"/>
+<div class="grid grid-cols-[25%_50%_25%] items-center justify-between w-full z-30">
+    <div class="flex items-center justify-start">
+        <button class="cursor-pointer" type="submit">
+            <svg class="icon-search" :class="{'text-white':open,'text-[#d58a9f]':!open}" width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-816.000000, -36.000000)" stroke="currentColor"><g transform="translate(817.000000, 37.000000)"><g transform="translate(0.360000, 0.000000)"><circle stroke-width="2" cx="7.5" cy="7.5" r="7.5"></circle><line x1="12.7618408" y1="12.7618408" x2="17.7115883" y2="17.7115883" stroke-width="2"></line></g></g></g></g></svg>
+        </button>
     </div>
-    <button class="cursor-pointer p-0 leading-0 absolute right-0 top-0 " type="submit">
-        <svg class="icon-search" :class="{'text-white':open,'text-[#d58a9f]':!open}" width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-816.000000, -36.000000)" stroke="currentColor"><g transform="translate(817.000000, 37.000000)"><g transform="translate(0.360000, 0.000000)"><circle stroke-width="2" cx="7.5" cy="7.5" r="7.5"></circle><line x1="12.7618408" y1="12.7618408" x2="17.7115883" y2="17.7115883" stroke-width="2"></line></g></g></g></g></svg>
-    </button>
-    </form>
+    <div class="flex grow w-full items-center justify-center">
+        <div class="font-logo tracking-[-0.12rem] font-[700] text-3xl" :class="{'text-white':open,'text-[#326278]':!open}"><a href="/"><span class="text-[#d58a9f]">pug</span>burps</a></div>
     </div>
-    <div class="flex items-center justify-end max-w-fit">
-        <div class="categories mr-6">
+    <div class="flex items-center justify-end ml-auto max-w-fit">
+        <!--<div class="categories mr-6">
             <div class="text-xs px-4 py-2 inline-block cursor-pointer" :class="{'bg-transparent text-white':open,'bg-gray-100 text-black':!open}">
                 Categories
                 <span class="ml-2 inline-block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="caret" :class="{'fill-white':open,'fill-[#326278]':!open}" width="10" height="10" viewBox="0 0 384 512"><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                 </span>
             </div>
-        </div>
+        </div>-->
         <div class="menu relative z-20">
             <nav>
                 <button class="w-14 h-14 relative focus:outline-none" @click="open = !open">
@@ -39,6 +36,42 @@
        
     </div>
 
+</div>
+<div class="secondary-nav lg:flex w-full items-center justify-center hidden">
+<div class="secondary-nav__content flex w-full">
+<ul class="secondary-nav__items flex items-center justify-evenly w-[80%] m-auto pb-4 pt-4 border-b border-t">
+<li class="secondary-nav__item">
+<a class="secondary-nav__link uppercase text-xs font-bold tracking-wider" href="/">Latest</a>
+</li>
+<li class="secondary-nav__item">
+<a class="theme__link secondary-nav__link  uppercase text-xs font-bold tracking-wider" href="/news/">News</a>
+</li>
+<li class="secondary-nav__item uppercase text-xs font-bold tracking-wider">
+<a class="theme__link secondary-nav__link " href="/inspiration/">Inspiration</a>
+</li>
+<li class="secondary-nav__item uppercase text-xs font-bold tracking-wider">
+<a class="theme__link secondary-nav__link " href="/features/">Features</a>
+</li>
+<li class="secondary-nav__item uppercase text-xs font-bold tracking-wider">
+<a class="theme__link secondary-nav__link " href="/resources/">Resources</a>
+</li>
+<li class="secondary-nav__item uppercase text-xs font-bold tracking-wider">
+<a class="theme__link secondary-nav__link " href="/tips/">Tips</a>
+</li>
+<li class="secondary-nav__item uppercase text-xs font-bold tracking-wider">
+<a class="secondary-nav__link " href="#">Regulars</a>
+</li>
+<li class="secondary-nav__item uppercase text-xs font-bold tracking-wider">
+<a class="secondary-nav__link " href="/podcast/">Podcast</a>
+</li>
+<li class="secondary-nav__item uppercase text-xs font-bold tracking-wider">
+<a class="secondary-nav__link " href="#">Topics</a>
+</li>
+<li class="secondary-nav__item uppercase text-xs font-bold tracking-wider">
+<a class="secondary-nav__link " href="#">Info</a>
+</li>
+</ul>
+</div>
 </div>
 <div class="absolute inset-0 top-12 bg-[#326278] z-10 h-0" :class="{'h-screen overflow-x-hidden': open, 'h-0': !open}"></div>
 </section>

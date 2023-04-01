@@ -1,0 +1,47 @@
+---
+export interface Props {
+    title: string;
+    excerpt: string;
+    href: string;
+    image: string;
+    alt: string;
+    date: string;
+    categories: string;
+    filter:string;
+    type:string;
+    aspect:string;
+}
+
+const {image, alt, href, type, categories, aspect, title, filter, excerpt, date} = Astro.props;
+---
+
+<div class:list={[ 'article relative mb-[80px] grow-0 shrink ', `${filter}`,`${type}` ]}>
+    <div class="article__image-container relative w-full m-0">
+    <div class="article__image-wrap w-full relative">
+    <img 
+    class:list={[ 'article__image block w-full h-full object-cover object-center', `${aspect}` ]}
+    src={image} 
+    alt={alt}
+    />
+    </div>
+    <span class="article__image-overlay hidden absolute inset-0 bg-black opacity-[0.3]"></span>
+    <a class="article__image-link absolute inset-0" href={href}></a>
+    </div>
+    <div class="article__content">
+    <ul class="article__categories flex flex-nowrap mt-[1.2rem] mb-[0.9rem] list-none">
+
+        <li class="article__category inline-block font-bold text-[0.8rem] leading-[1.5rem] text-black uppercase">
+    <a class="theme__link border-b-2 border-[#71dec5] inline-block relative pb-[3px] text-black" href="/features/insight/">{categories}</a>
+    </li>
+    </ul>
+    <div class="article__info">
+    <h2 class="article__title text-[1.5rem] leading-[2rem] mb-[0.9rem]">
+    <a class="article__link" href="/features/after-30-years-im-still-giving-my-clients-the-same-advice-david-hodgson-looks-back-on-three-decades-of-running-a-design-agency/">
+    <span class="article__title--full">{title}</span>
+    </a>
+    </h2>
+    </div>
+    <a class="article__button hidden" href="/features/after-30-years-im-still-giving-my-clients-the-same-advice-david-hodgson-looks-back-on-three-decades-of-running-a-design-agency/">Read More</a>
+    <p class="article__date text-xs"><a class="article__link text-[#999999]" href="/features/after-30-years-im-still-giving-my-clients-the-same-advice-david-hodgson-looks-back-on-three-decades-of-running-a-design-agency/">{date}</a></p>
+    </div>
+    </div>
